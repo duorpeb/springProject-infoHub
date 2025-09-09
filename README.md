@@ -1,0 +1,347 @@
+> # 💡 info Hub - 커뮤니티 사이트 (Spring 개인 프로젝트)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=info-Hub">
+
+
+### 🖥️ 스크린샷
+
+> 📗 메인 페이지 - 실시간 뉴스 기사 10개 출력 (이미지에는 4개만 표시)
+>> <img width="1200" height="644" alt="image" src="https://github.com/user-attachments/assets/98f3b39b-8166-4faa-9333-0cf55619aa04" />
+<br><br>
+
+> 📗 메인 페이지 - 뉴스 기사 클릭 시 이동 페이지 (해당 기사 원문으로 이동)
+>> <img width="1200" height="739" alt="image" src="https://github.com/user-attachments/assets/dbb6f092-096d-4f1d-ba2c-d6b7e5441ff4" />
+<br><br>
+
+> 📗 메인 페이지 - 이번주 날씨 정보 (현재 날짜부터 4일간의 날씨 정보) 출력
+>> <img width="1200" height="327" alt="image" src="https://github.com/user-attachments/assets/a8f92693-b004-4a28-b783-4ee8482f073e" />
+<br><br>
+
+> 📗 메인 페이지 - 최신 게시글과 좋아요 · 댓글 · 조회수 많은 순 게시글 출력, 카테고리 별 게시글 조회 및 게시글 작성 
+>> <img width="1200" height="735" alt="image" src="https://github.com/user-attachments/assets/c3713d30-d641-46bc-af07-64a8d53ce3ba" />
+<br><br>
+
+> 📗 메인 페이지 - 카테고리 클릭 시 이동 페이지
+>> <img width="1200" height="351" alt="image" src="https://github.com/user-attachments/assets/7d6ef3c3-1cd7-4018-b75d-0bcdc98d9ba0" />
+<br><br>
+
+> 📗 게시글 작성 페이지 - 카테고리 선택하여 게시글 작성
+>> <img width="1200" height="600" alt="image" src="https://github.com/user-attachments/assets/93127bd7-6539-42ec-8291-fe448030b24e" />
+
+<br><br>
+
+> 📗 게시글 작성 페이지 - 파일 첨부 (.exe, .jar, .msi, .dll, .sh, .bat 파일은 업로드 불가)
+>> <img width="112" height="93" alt="image" src="https://github.com/user-attachments/assets/aec1cc7a-8d8d-43b8-9b9d-00e3e176ab7c" /> <img width="132" height="87" alt="image" src="https://github.com/user-attachments/assets/eaf1fbb8-e0d6-44d6-844f-8d247c5a0d19" />
+
+<br><br>
+
+> 📗 게시글 상세 조회 페이지 - 댓글 작성, 좋아요, 뒤로 가기, 이전글로 이동, 다음글로 이동
+>> <img width="1200" height="738" alt="image" src="https://github.com/user-attachments/assets/6daa862a-6116-4afc-9393-806f049cb41f" />
+<br><br>
+
+> 📗 로그인 페이지 - 유효성 검사 (밸리데이션)
+>> <img width="1200" height="726" alt="image" src="https://github.com/user-attachments/assets/6fa8b4cb-337b-4274-ba37-f051c6dcf012" />
+<br><br>
+
+> 📗 회원 가입 페이지 - 아이디 · 닉네임 중복 검사, 유효성 검사 
+>> <img width="365" height="530" alt="image" src="https://github.com/user-attachments/assets/560a57a2-74cd-40eb-a0d5-ea1e317843f5" />
+<br><br>
+
+> 📗 회원 정보 수정 페이지 - 프로필 사진 · 이메일 · 비밀번호 수정, 회원 탈퇴
+>> <img width="501" height="648" alt="image" src="https://github.com/user-attachments/assets/7d153e56-e563-408a-92f8-07805f14ab55" />
+
+
+<br><br><br><br><br>
+
+
+> # 💡 프로젝트 소개 
+🖥️ 뉴스 기사와 날씨를 볼 수 있는 커뮤니티 사이트를 제작해보았습니다.
+
+<br><br><br><br><br>
+
+
+> # 💡개발 기간 및 팀 규모 
+### 🖥️ 개발 기간 
+2025/06/12 ~ 2025/06/18 (7일) + 추가 수정/보완 (3일) <br><br>
+
+### 🖥️ 개발 인원 
+1명 
+
+<br><br><br><br><br>
+
+
+> # 💡 기술 스택
+### 🖥️ LANGUAGE
+
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> <br><br>
+
+### 🖥️ API 
+<img src="https://img.shields.io/badge/naver search API-03C75A?style=for-the-badge&logo=naver&logoColor=white"> <img src="https://img.shields.io/badge/기상청_단기예보_API-EB4D6F"> <img src="https://img.shields.io/badge/Geolocation_Web API-42A1F5"> 
+<br><br>
+
+### 🖥️ 라이브러리 
+<img src="https://img.shields.io/badge/Spring%20Context-5.3.10-6DB33F?style=for-the-badge&logo=spring&logoColor=white" /> <img src="https://img.shields.io/badge/Spring%20WebMVC-5.3.10-6DB33F?style=for-the-badge&logo=spring&logoColor=white" /> <img src="https://img.shields.io/badge/Spring%20JDBC-5.3.10-6DB33F?style=for-the-badge&logo=spring&logoColor=white" /> <img src="https://img.shields.io/badge/Spring%20Test-5.3.10-6DB33F?style=for-the-badge&logo=spring&logoColor=white" />
+<br><br>
+
+<!-- AOP / Utility -->
+<img src="https://img.shields.io/badge/AspectJ-1.6.10-68217A?style=for-the-badge" /> <img src="https://img.shields.io/badge/JSR330%20(Inject)-1-616161?style=for-the-badge" />
+<br><br>
+
+<!-- Logging -->
+<img src="https://img.shields.io/badge/SLF4J%20API-2.0.7-F07F2E?style=for-the-badge" /> <img src="https://img.shields.io/badge/jcl--over--slf4j-2.0.7-FF8A65?style=for-the-badge" /> <img src="https://img.shields.io/badge/slf4j--log4j12-2.0.7-FF7043?style=for-the-badge" /> <img src="https://img.shields.io/badge/Logback%20Classic-1.3.14-F05A28?style=for-the-badge" /> <img src="https://img.shields.io/badge/Logback%20Core-1.3.14-F05A28?style=for-the-badge" /> <img src="https://img.shields.io/badge/log4jdbc-1.16-3F51B5?style=for-the-badge" />
+<br><br>
+
+<!-- Servlet/JSP/JSTL -->
+<img src="https://img.shields.io/badge/Servlet%20API-4.0.1-455A64?style=for-the-badge" /> <img src="https://img.shields.io/badge/JSP%20API-2.1-607D8B?style=for-the-badge" /> <img src="https://img.shields.io/badge/JSTL-1.2-90A4AE?style=for-the-badge" />
+<br><br>
+
+<!-- DB / MyBatis / Pool -->
+<img src="https://img.shields.io/badge/MySQL%20Connector%20J-8.0.33-4479A1?style=for-the-badge&logo=mysql&logoColor=white" /> <img src="https://img.shields.io/badge/MyBatis-3.5.10-B53B3B?style=for-the-badge" /> <img src="https://img.shields.io/badge/MyBatis%20Spring-2.0.6-B53B3B?style=for-the-badge" /> <img src="https://img.shields.io/badge/HikariCP-6.3.0-0B96D1?style=for-the-badge" />
+<br><br>
+
+<!-- JSON / XML -->
+<img src="https://img.shields.io/badge/Jackson%20Databind-2.14.2-1E90FF?style=for-the-badge" /> <img src="https://img.shields.io/badge/Jackson%20Dataformat%20XML-2.14.2-1E90FF?style=for-the-badge" /> <img src="https://img.shields.io/badge/Jackson%20Datatype%20JSR310-2.14.2-1E90FF?style=for-the-badge" />
+<br><br>
+
+<!-- File/Media -->
+<img src="https://img.shields.io/badge/Commons%20FileUpload-1.4-1B6593?style=for-the-badge" /> <img src="https://img.shields.io/badge/Commons%20IO-2.11.0-1B6593?style=for-the-badge" /> <img src="https://img.shields.io/badge/Thumbnailator-0.4.17-2C3E50?style=for-the-badge" /> <img src="https://img.shields.io/badge/Apache%20Tika%20Core-2.4.1-D22128?style=for-the-badge" /> <img src="https://img.shields.io/badge/Apache%20Tika%20Parsers-2.4.1-D22128?style=for-the-badge" />
+<br><br>
+
+<!-- Scheduling -->
+<img src="https://img.shields.io/badge/Quartz-2.3.2-2E86C1?style=for-the-badge" /> <img src="https://img.shields.io/badge/Quartz%20Jobs-2.3.2-2E86C1?style=for-the-badge" />
+<br><br>
+
+<!-- Security -->
+<img src="https://img.shields.io/badge/Spring%20Security%20Core-5.5.3-20A76B?style=for-the-badge&logo=springsecurity&logoColor=white" /> <img src="https://img.shields.io/badge/Spring%20Security%20Web-5.5.3-20A76B?style=for-the-badge&logo=springsecurity&logoColor=white" /> <img src="https://img.shields.io/badge/Spring%20Security%20Config-5.5.3-20A76B?style=for-the-badge&logo=springsecurity&logoColor=white" /> <img src="https://img.shields.io/badge/Spring%20Security%20Taglibs-5.5.3-20A76B?style=for-the-badge&logo=springsecurity&logoColor=white" />
+<br><br>
+
+<!-- Test -->
+<img src="https://img.shields.io/badge/JUnit-4.7-25A162?style=for-the-badge" />
+<br><br>
+
+<!-- Dev Tools -->
+<img src="https://img.shields.io/badge/Lombok-1.18.38-C62828?style=for-the-badge" />
+   
+<br><br><br><br><br>
+
+
+> # 💡 폴더 구조
+```
+📁 infoHub/
+└─ 📂 myproject/
+   ├─ 📂 .settings/
+   │  
+   ├─ 📂 src/
+   │  ├─ 📂 main/
+   │  │  ├─ 📂 java/
+   │  │  │  └─ 📂 com/
+   │  │  │     └─ 📂 myproject/
+   │  │  │        └─ 📂 www/
+   │  │  │           ├─ 📂 api/
+   │  │  │           │  ├─ JacksonConfig.java
+   │  │  │           │  ├─ NaverNewsAPIHandler.java
+   │  │  │           │  └─ WeatherShortTermAPIHandler.java
+   │  │  │           │ 
+   │  │  │           ├─ 📂 config/
+   │  │  │           │  ├─ RootConfig.java
+   │  │  │           │  ├─ SecurityConfig.java
+   │  │  │           │  ├─ SecurityInitializer.java
+   │  │  │           │  ├─ ServletConfiguration.java
+   │  │  │           │  └─ WebConfig.java
+   │  │  │           │ 
+   │  │  │           ├─ 📂 controller/
+   │  │  │           │  ├─ BoardController.java
+   │  │  │           │  ├─ CommentController.java
+   │  │  │           │  ├─ HomeController.java
+   │  │  │           │  ├─ NewsController.java
+   │  │  │           │  ├─ UserController.java
+   │  │  │           │  └─ WeatherController.java
+   │  │  │           │ 
+   │  │  │           ├─ 📂 domain/
+   │  │  │           │  ├─ AuthVO.java
+   │  │  │           │  ├─ BoardDTO.java
+   │  │  │           │  ├─ BoardVO.java
+   │  │  │           │  ├─ BookmarkVO.java
+   │  │  │           │  ├─ CommentVO.java
+   │  │  │           │  ├─ FileVO.java
+   │  │  │           │  ├─ ItemVO.java
+   │  │  │           │  ├─ LikeVO.java
+   │  │  │           │  ├─ NewsDTO.java
+   │  │  │           │  ├─ PagingVO.java
+   │  │  │           │  ├─ UserVO.java
+   │  │  │           │  ├─ WeatherBodyDTO.java
+   │  │  │           │  ├─ WeatherBodyItemsDTO.java
+   │  │  │           │  ├─ WeatherHeaderDTO.java
+   │  │  │           │  ├─ WeatherItemVO.java
+   │  │  │           │  ├─ WeatherResponse.java
+   │  │  │           │  ├─ WeatherResponseDTO.java
+   │  │  │           │  ├─ WeatherShortObj.java
+   │  │  │           │  └─ WeatherShortObjForJS.java
+   │  │  │           │ 
+   │  │  │           ├─ 📂 exception/
+   │  │  │           │  └─ CommonExceptionAdvice.java
+   │  │  │           │ 
+   │  │  │           ├─ 📂 handler/
+   │  │  │           │  ├─ FileHandler.java
+   │  │  │           │  ├─ PagingHandler.java
+   │  │  │           │  └─ ProfileImgSweeper.java
+   │  │  │           │ 
+   │  │  │           ├─ 📂 repository/
+   │  │  │           │  ├─ BoardDAO.java
+   │  │  │           │  ├─ BookmarkDAO.java
+   │  │  │           │  ├─ CommentDAO.java
+   │  │  │           │  ├─ FileDAO.java
+   │  │  │           │  ├─ LikeDAO.java
+   │  │  │           │  └─ UserDAO.java
+   │  │  │           │ 
+   │  │  │           ├─ 📂 security/
+   │  │  │           │  ├─ AuthUser.java
+   │  │  │           │  ├─ CustomAuthUserService.java
+   │  │  │           │  ├─ LoginFailureHandler.java
+   │  │  │           │  └─ LoginSuccessHandler.java
+   │  │  │           │ 
+   │  │  │           └─ 📂 service/
+   │  │  │              ├─ BoardService.java
+   │  │  │              ├─ BoardServiceImpl.java
+   │  │  │              ├─ BookmarkService.java
+   │  │  │              ├─ BookmarkServiceImpl.java
+   │  │  │              ├─ CommentService.java
+   │  │  │              ├─ CommentServiceImpl.java
+   │  │  │              ├─ UserService.java
+   │  │  │              └─ UserServiceImpl.java
+   │  │  │     
+   │  │  ├─ 📂 resources/
+   │  │  │  ├─ 📂 META-INF/
+   │  │  │  │
+   │  │  │  ├─ 📂 mapper/
+   │  │  │  │  ├─ boardMapper.xml
+   │  │  │  │  ├─ commentMapper.xml
+   │  │  │  │  ├─ fileMapper.xml
+   │  │  │  │  ├─ likeMapper.xml
+   │  │  │  │  └─ userMapper.xml
+   │  │  │  │
+   │  │  │  ├─ log4j.xml
+   │  │  │  ├─ log4jdbc.log4j2.properties
+   │  │  │  ├─ logback.xml
+   │  │  │  ├─ mybatisConfig.xml
+   │  │  │  └─ sql.txt
+   │  │  │  
+   │  │  └─ 📂 webapp/
+   │  │     ├─ 📂 WEB-INF/
+   │  │     │  ├─ 📂 classes/
+   │  │     │  │
+   │  │     │  ├─ 📂 spring/
+   │  │     │  │  ├─ appServlet/
+   │  │     │  │  │  └─ servlet-context.xml
+   │  │     │  │  └─ root-context.xml
+   │  │     │  │
+   │  │     │  ├─ 📂 tld/
+   │  │     │  │  └─ customFunc.tld
+   │  │     │  │
+   │  │     │  └─ 📂 views/
+   │  │     │     ├─ 📂 board/
+   │  │     │     │  ├─ detail.jsp
+   │  │     │     │  ├─ list.jsp
+   │  │     │     │  ├─ modify.jsp
+   │  │     │     │  └─ register.jsp
+   │  │     │     │
+   │  │     │     ├─ 📂 layout/
+   │  │     │     │  ├─ footer.jsp
+   │  │     │     │  ├─ header.jsp
+   │  │     │     │  └─ layoutSample.jsp
+   │  │     │     │ 
+   │  │     │     ├─ 📂 user/
+   │  │     │     │  ├─ join.jsp
+   │  │     │     │  ├─ login.jsp
+   │  │     │     │  └─ mypage.jsp
+   │  │     │     └─ home.jsp
+   │  │     │     
+   │  │     └─ 📂 resources/
+   │  │        │
+   │  │        ├─ 📂 dist/
+   │  │        │  ├─ 📂 css/
+   │  │        │  │  ├─ bootstrap.bundle.min.js.map
+   │  │        │  │  ├─ bootstrap.min.css
+   │  │        │  │  ├─ bootstrap.bundle.min.js.map
+   │  │        │  │  ├─ comment.css
+   │  │        │  │  ├─ home.css
+   │  │        │  │  ├─ join.css
+   │  │        │  │  ├─ like.css
+   │  │        │  │  ├─ list.css
+   │  │        │  │  ├─ login.css
+   │  │        │  │  ├─ profile-edit.css
+   │  │        │  │  └─ register.css
+   │  │        │  │ 
+   │  │        │  ├─ 📂 js/
+   │  │        │  │  ├─ bootstrap.bundle.min.js
+   │  │        │  └─ └─ bootstrap.bundle.min.js.map
+   │  │        │
+   │  │        ├─ 📂 img/
+   │  │        │  ├─ bootstrap-5.3.6-dist.zip
+   │  │        │  ├─ default-avatar.png
+   │  │        │  ├─ loginBackImg.png
+   │  │        │  ├─ logo.png
+   │  │        │  ├─ weather-cloudy-and-rain.png
+   │  │        │  ├─ weather-cloudy.png
+   │  │        │  ├─ weather-icon.png
+   │  │        │  ├─ weather-rain.png
+   │  │        │  ├─ weather-snow.png
+   │  │        │  ├─ weather-sunny.png
+   │  │        │  └─ weather-thunder-and-rain.png
+   │  │        │
+   │  │        └─ 📂 js/
+   │  │           ├─ ShortTermForecastToJsonInKor.js
+   │  │           ├─ WeatherOpenAPIAppendixDoc.js
+   │  │           ├─ boardDetail.js
+   │  │           ├─ boardModify.js
+   │  │           ├─ boardRegisterFile.js
+   │  │           ├─ duplicatedNickCheck.js
+   │  │           ├─ geolocationAndWeatherAPI.js
+   │  │           ├─ home.js
+   │  │           ├─ imgCheck.js
+   │  │           ├─ imgPreview.js
+   │  │           ├─ logout.js
+   │  │           ├─ package-lock.json
+   │  │           ├─ package.json
+   │  │           └─ 기상청41_단기예보 조회서비스_오픈API활용가이드_격자_위경도(2411).xlsx
+   │  │
+   │  └─ 📂 test/
+   │     ├─ 📂 java/
+   │     │  └─ 📂 com/
+   │     │     └─ 📂 myproject/
+   │     │        └─ 📂 www/
+   │     │ 
+   │     └─ 📂 resources/
+   │        └─ log4j.xml
+   │   
+   ├─ .classpath
+   ├─ .project
+   ├─ .springBeans
+   ├─ README.md
+   └─ pom.xml
+```
+<br><br><br><br><br>
+
+
+> # 💡기능
+
+### 🖥️ 네이버 검색 API 를 활용한 뉴스 기사 출력 
+
+### 🖥️ Geolocation Web API 와 기상청 단기 예보 API 를 활용하여 현재 위치의 4일간 (당일 ~ 글피) 날씨 정보를 출력
+
+### 🖥️ SNS 피드 형식 (메인 페이지) 과 페이지네이션 (카테고리 별 조회) 을 활용한 리스트 형식으로 게시글 조회 가능
+
+### 🖥️ 게시글 상세 조회 시 댓글 CRUD · 좋아요 · 뒤로가기 및 이전/다음글로 이동 기능 사용 가능
+
+### 🖥️ 파일 첨부를 포함한 게시글 CRUD
+
+### 🖥️ 로그인 및 회원가입 
+
+<br><br><br><br><br>
+
+
+> # 💡 프로젝트 소감
+ 
+### **1. API 의 사용**
+
+### **2. 더 나은 UI/UX 에 대한 고민**
