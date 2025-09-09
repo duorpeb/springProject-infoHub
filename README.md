@@ -5,50 +5,56 @@
 
 ### 🖥️ 스크린샷
 
-> 📗 메인 페이지 - 실시간 뉴스 기사 10개 출력 (이미지에는 4개만 표시)
->> <img width="1200" height="644" alt="image" src="https://github.com/user-attachments/assets/98f3b39b-8166-4faa-9333-0cf55619aa04" />
+> 📗 메인 페이지 - 실시간 뉴스 기사 10개 출력 
+>> <img width="1200" height="700" alt="image" src="https://github.com/user-attachments/assets/e5ca5b90-5eff-4610-8c35-6d31602a92ac" />
 <br><br>
 
 > 📗 메인 페이지 - 뉴스 기사 클릭 시 이동 페이지 (해당 기사 원문으로 이동)
->> <img width="1200" height="739" alt="image" src="https://github.com/user-attachments/assets/dbb6f092-096d-4f1d-ba2c-d6b7e5441ff4" />
+>> <img width="1200" height="841" alt="image" src="https://github.com/user-attachments/assets/5edb8d6c-fef8-4a5a-a6b7-f0d85c5354a4" />
 <br><br>
 
 > 📗 메인 페이지 - 이번주 날씨 정보 (현재 날짜부터 4일간의 날씨 정보) 출력
->> <img width="1200" height="327" alt="image" src="https://github.com/user-attachments/assets/a8f92693-b004-4a28-b783-4ee8482f073e" />
+>> <img width="1200" height="338" alt="image" src="https://github.com/user-attachments/assets/2ced3227-57f5-4fe9-9296-114494938654" />
 <br><br>
 
 > 📗 메인 페이지 - 최신 게시글과 좋아요 · 댓글 · 조회수 많은 순 게시글 출력, 카테고리 별 게시글 조회 및 게시글 작성 
->> <img width="1200" height="735" alt="image" src="https://github.com/user-attachments/assets/c3713d30-d641-46bc-af07-64a8d53ce3ba" />
+>> <img width="1200" height="758" alt="image" src="https://github.com/user-attachments/assets/2da5e198-6218-4ce6-8031-b86c53516d52" />
 <br><br>
 
 > 📗 메인 페이지 - 카테고리 클릭 시 이동 페이지
->> <img width="1200" height="351" alt="image" src="https://github.com/user-attachments/assets/7d6ef3c3-1cd7-4018-b75d-0bcdc98d9ba0" />
+>> <img width="1200" height="276" alt="image" src="https://github.com/user-attachments/assets/22ae0c04-117a-477b-b013-5555d42620d5" />
 <br><br>
 
 > 📗 게시글 작성 페이지 - 카테고리 선택하여 게시글 작성
->> <img width="1200" height="600" alt="image" src="https://github.com/user-attachments/assets/93127bd7-6539-42ec-8291-fe448030b24e" />
-
+>> <img width="1200" height="794" alt="image" src="https://github.com/user-attachments/assets/0a5d600d-451a-4957-905e-a3ee2323c3c7" />
 <br><br>
 
 > 📗 게시글 작성 페이지 - 파일 첨부 (.exe, .jar, .msi, .dll, .sh, .bat 파일은 업로드 불가)
->> <img width="112" height="93" alt="image" src="https://github.com/user-attachments/assets/aec1cc7a-8d8d-43b8-9b9d-00e3e176ab7c" /> <img width="132" height="87" alt="image" src="https://github.com/user-attachments/assets/eaf1fbb8-e0d6-44d6-844f-8d247c5a0d19" />
+>> <img width="1200" height="134" alt="image" src="https://github.com/user-attachments/assets/fa925fe8-0a60-4f79-9299-55d1a3bad7be" />
+>> <img width="1200" height="133" alt="image" src="https://github.com/user-attachments/assets/22de3638-6d1d-4423-ac02-a529b72d6b0c" />
 
 <br><br>
 
+
 > 📗 게시글 상세 조회 페이지 - 댓글 작성, 좋아요, 뒤로 가기, 이전글로 이동, 다음글로 이동
->> <img width="1200" height="738" alt="image" src="https://github.com/user-attachments/assets/6daa862a-6116-4afc-9393-806f049cb41f" />
+>> <img width="1200" height="722" alt="image" src="https://github.com/user-attachments/assets/60d1f5c7-f7e8-4933-8fc8-9dadbe6f623e" />
+>> <img width="1200" height="289" alt="image" src="https://github.com/user-attachments/assets/4e1f3e0a-ca39-487e-9a85-428cf8257094" />
+
+
 <br><br>
 
 > 📗 로그인 페이지 - 유효성 검사 (밸리데이션)
->> <img width="1200" height="726" alt="image" src="https://github.com/user-attachments/assets/6fa8b4cb-337b-4274-ba37-f051c6dcf012" />
+>> <img width="1200" height="729" alt="image" src="https://github.com/user-attachments/assets/53de7920-7fe3-42d0-bdad-ea4587a54db0" />
 <br><br>
 
-> 📗 회원 가입 페이지 - 아이디 · 닉네임 중복 검사, 유효성 검사 
->> <img width="365" height="530" alt="image" src="https://github.com/user-attachments/assets/560a57a2-74cd-40eb-a0d5-ea1e317843f5" />
+> 📗 회원 가입 페이지 - 아이디 · 닉네임 중복 검사 및 유효성 검사 
+>> <img width="349" height="514" alt="image" src="https://github.com/user-attachments/assets/81b334f5-4986-4f66-a07a-b4f5eed4ee1b" />
+
 <br><br>
 
 > 📗 회원 정보 수정 페이지 - 프로필 사진 · 이메일 · 비밀번호 수정, 회원 탈퇴
->> <img width="501" height="648" alt="image" src="https://github.com/user-attachments/assets/7d153e56-e563-408a-92f8-07805f14ab55" />
+>> <img width="508" height="621" alt="image" src="https://github.com/user-attachments/assets/070abd59-d65f-47a6-8526-6297832a23d8" />
+
 
 
 <br><br><br><br><br>
