@@ -1,0 +1,16 @@
+.invisible{
+	display: none;
+}
+
+.likeContainer{
+	display: flex;
+	justify-content: center;
+	
+	cursor: pointer;
+}
+
+.emptyLikeIconDiv, .filledLikeIconDiv{
+	text-align: center;
+	
+	cursor: pointer;
+}

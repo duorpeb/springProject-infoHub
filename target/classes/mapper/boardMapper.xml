@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="com.myproject.www.repository.BoardDAO">
+	<!-- 전체 게시글 개수 조회 -->
+	<select id="getTc" resultType="int">
+		select count(*) from board 
+		<where>
+			is_del = 'N'
+			and category = #{category}
+			<include refid="search"></include>
+		</where>
+		
+	</select>
+
+	<!-- 게시글 삭제 -->
+	<delete id="delete">
+		delete from board where bno = #{bno}
+	</delete>
+
+
+	<!-- 조회수 많은 순으로 TOP 8 게시글 가져오기 -->
+	<select id="getViewsBvoList" resultType="com.myproject.www.domain.BoardVO">
+		select b.bno, b.title from board b 
+		where is_del = 'N'
+		order by b.views desc, b.bno desc
+		limit 8	
+	</select>
+
+	<!-- 댓글 많은 순으로 TOP 8 게시글 가져오기 -->
+	<select id="getCmtBvoList" resultType="com.myproject.www.domain.BoardVO">
+		select b.bno, b.title from board b
+		where is_del = 'N'
+		order by b.cmt_cnt desc, b.bno desc
+		limit 8
+	</select>
+
+
+	<!-- 좋아요 많은 순으로 TOP 8 게시글 가져오기 -->
+	<select id="getLikeBvoList" resultType="com.myproject.www.domain.BoardVO">
+		select b.bno, b.title from board b
+		where is_del = 'N' 
+		order by b.recommend desc, b.bno desc 
+		limit 8
+	</select>
+
+	<!-- 좋아요 1 감소 -->
+	<update id="decreRecommend">
+		update board
+		set recommend = recommend - 1
+		where bno = #{bno}
+	</update>
+
+
+	<!-- 좋아요 1 증가 -->
+	<update id="increRecommend">
+		update board 
+		set recommend = recommend + 1
+		where bno = #{bno}
+	</update>
+
+	<!-- 게시글 수정 -->
+	<update id="getUpdate">
+  	update board 
+  	set title = #{title}, content = #{content}, reg_date = now() 
+  	where bno = #{bno}
+  </update>
+
+	<!-- 댓글 1 증가 -->
+  <update id="increCmtQty">
+  	update board 
+  	set cmt_cnt = cmt_cnt + 1 
+  	where bno = #{bno}
+  </update>
+  
+  <update id="decreCmtQty">
+  	update board 
+  	set cmt_cnt = cmt_cnt - 1 
+  	where bno = #{bno}
+  </update>
+	
+	<!-- 프로필 이미지 출력을 위한 보드 작성자 (닉네임) 가져오기 -->
+	<select id="getFileName" resultType="java.lang.String">
+		select file_name from user where nick_name = #{writer}
+	</select>
+
+	<!-- 리스트 가져오기  -->
+  <select id="getList" resultType="com.myproject.www.domain.BoardVO">
+  	select * from board
+  	<where>
+  		is_del = 'N'
+  		<if test="category != null and category != ''">
+  			and category = #{category}
+  		</if>
+  		<include refid="search"></include>
+  	</where> 
+  	order by reg_date desc
+  	limit #{pgvo.pageStart}, #{pgvo.qty}
+  </select>
+
+	<!-- 게시물 등록 -->
+	<insert id="getInsert">
+		insert into board(category, title, writer, content) 
+		values(#{category}, #{title}, #{writer}, #{content})
+	</insert>
+	
+	<!-- 가장 최근 등록한 bno 가져오기  -->
+	<select id="getBno" resultType="java.lang.Long">
+		select max(bno) from board
+	</select>
+	
+	<!-- detail.jsp 에 정보를 뿌리기 위한 SELECT -->
+  <select id="getDetail" resultType="com.myproject.www.domain.BoardVO">
+  	select * from board 
+  	where bno = #{bno}
+  </select>
+	
+	<!-- 게시물 삭제 처리 -->
+	<update id="getDelete">
+  	update board 
+  	set is_del = 'Y' 
+  	where bno = #{bno}
+  </update>
+  
+  <!-- 조회수 1 증가 -->
+  <update id="getCntUp">
+  	update board 
+  	set views = views + 1 
+  	where bno = #{bno}
+  </update>
+  
+  <!-- 조회수 1 감소 -->
+  <update id="getCntDown">
+  	update board 
+  	set views = views - 1
+  	where bno = #{bno}
+  </update>
+	
+  <!-- < 와 # 가 붙어서 작성되는 경우
+  	> XML 문서에서 < 기호는 요소 시작(태그)으로 쓰이기 때문에, 
+  	  bno < #{bno} 를 만나면 “< #{b}... 는 잘못된 태그”로 간주돼 파싱 오류가 발생 
+  	
+  	> 이에 대한 해결 방법 2가지 &lt; 혹은 <![CDATA[ Query ]]> 사용 
+		
+		> getPrevContent 는 이전글로 이동하기 위한 getBno, 
+		  getNextContent 는 다음글로 이동하기 위한 getBno
+  -->
+  <select id="getPrevContent" resultType="java.lang.Long">
+  	select bno
+  	from board 
+  	where is_del = 'N'
+  	and bno &lt; #{bno}
+  	order by bno desc 
+  	limit 1
+  </select>
+  
+  <select id="getNextContent" resultType="java.lang.Long">
+	  <![CDATA[
+	  	select bno
+	  	from board 
+	  	where is_del = 'N'
+	  	and bno > #{bno}
+	  	limit 1
+	  ]]>
+  </select>
+  
+  
+  <!-- sql 조각 - 검색을 위한 SQL 조각 -->
+  <sql id="search">
+  	<if test="pgvo.type != null">
+  		<trim prefix="and (" suffix=")" suffixOverrides="or">
+  			<foreach collection = "pgvo.typeToArray" item="type">
+  				<trim suffix="or">
+  					<choose>
+  						<when test = "pgvo.type == 't'.toString()">
+  							title like concat('%', #{pgvo.keyword}, '%')
+  						</when>
+  						
+  						<when test = "pgvo.type == 'w'.toString()">
+  							writer like concat('%', #{pgvo.keyword}, '%')
+  						</when>
+  						
+  						<when test = "pgvo.type == 'c'.toString()">
+  							content like concat('%', #{pgvo.keyword}, '%')
+  						</when>
+  					</choose>
+  				</trim>
+  			</foreach>
+  		</trim>
+  	</if>
+  </sql>
+ 
+</mapper>

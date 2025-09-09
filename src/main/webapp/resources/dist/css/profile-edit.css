@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* profile-edit.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.profile-edit-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.profile-edit-container h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #444;
+}
+
+.profile-edit-form .form-group {
+  margin-bottom: 1.2rem;
+}
+
+.profile-edit-form label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
+.profile-edit-form input[type="text"],
+.profile-edit-form input[type="email"],
+.profile-edit-form input[type="password"],
+.profile-edit-form input[type="tel"],
+.profile-edit-form input[type="file"] {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.profile-image-preview {
+  margin-bottom: 0.5rem;
+}
+
+.profile-image-preview img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #43a047;
+}
+
+.btn-secondary {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background-color: #d5d5d5;
+}
+
+/* 반응형 */
+@media (max-width: 480px) {
+  .profile-edit-container {
+    margin: 20px;
+    padding: 1.2rem;
+  }
+  .form-actions {
+    flex-direction: column;
+  }
+  .form-actions .btn {
+    width: 100%;
+    margin-bottom: 0.8rem;
+  }
+}

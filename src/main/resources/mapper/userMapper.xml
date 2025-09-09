@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="com.myproject.www.repository.UserDAO">
+
+
+	<!-- 회원정보 불러오기 -->
+	<select id="getUser" resultType="com.myproject.www.domain.UserVO">
+		select * from user where id = #{id}
+	</select>
+
+	<!-- 권한 가져오기 -->
+	<select id="getAuthList" resultType="com.myproject.www.domain.AuthVO">
+		select * from auth where id = #{id}
+	</select>
+	
+	<!-- 회원 가입 -->
+	<insert id="membershipReg">
+		insert into user(id, email, pwd, nick_name, terms, file_name) 
+		values(#{id}, #{email}, #{pwd}, #{nickName}, #{terms}, #{fileName})
+	</insert>
+	
+	<!-- 회원 가입 시 권한 부여 -->
+	<insert id="insertAuth">
+		insert into auth(id, auth) values(#{id}, 'ROLE_USER')
+	</insert>
+	
+	<!-- 마이페이지 (회원 정보 수정) - 모든 정보 수정 -->
+	<update id="getUpdate">
+		update user
+		set email = #{email}, pwd = #{pwd}, nick_name = #{nickName}, file_name = #{fileName}
+		where id = #{id}
+	</update>
+	
+	<!-- 마이페이지 (회원 정보 수정) - 비밀번호만 제외한 업데이트 -->
+	<update id="getSubPwdUpdate">
+		update user
+		set email = #{email}, nick_name = #{nickName}, file_name = #{fileName}
+		where id = #{id}
+	</update>
+	
+	<!-- 마이페이지 (회원 정보 수정) - 파일 업로드만 제외한 업데이트 -->
+	<update id="getSubFileUpdate">
+		update user
+		set email = #{email}, pwd = #{pwd}, nick_name = #{nickName}
+		where id = #{id}
+	</update>
+	
+	<!-- 마이페이지 (회원 정보 수정) - 비밀번호, 파일 제외한 업데이트 -->
+	<update id="getSubPwdFileUpdate">
+		update user 
+		set email = #{email}, nick_name = #{nickName}
+		where id = #{id}
+	</update>
+	
+	<!-- 회원 탈퇴 -->
+	<delete id="userDelete">
+		delete from user where id = #{id}
+	</delete>
+	
+	<!-- 회원 가입 시 아이디 중복 검사 -->
+	<select id="checkId" resultType = "int">
+		select count(id) from user where id = #{id} 	
+	</select>
+	
+	
+	<!-- 회원 가입 시 닉네임 중복 검사 -->
+	<select id="checkNick" resultType="int">
+		select count(nick_name) from user where nick_name = #{nickName}
+	</select>
+	
+</mapper>

@@ -1,0 +1,382 @@
+@charset "UTF-8";
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Noto Sans KR', sans-serif; background:#f0f0f0; }
+html{
+  min-width: 1080px;
+}
+
+/* News & Weather */
+#apiSection {
+  margin: 12px 24px;
+
+  background: #fff;
+  
+  border-radius: 8px;
+  
+  display: flex;
+
+  overflow: hidden;
+}
+
+
+#apiSection .news {
+  /* flex: <숫자>; 
+    
+    > "flex: <숫자>" 는 단축 (shorthand) 속성으로 내부적으로는 아래와 같이 세 가지 속성을 설정 
+      (item{ flex : 2 } => item{ flex-grow : 2; flex-shrink : 1; flex-basis : 0%; } )
+
+      #1_ flex-grow: 2; - 여유 공간이 있을 때, 다른 항목보다 2배만큼 키움 
+
+      #2_ flex-shrink: 1; - 공간이 부족할 때, 기본 비율(1)로 줄임 
+
+      #3_ flex-basis: 0%; - 초기 크기를 0으로 잡고 flex-grow 비율로만 결정 
+
+    ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+    > flex: 2; 를 주고 같은 줄에 flex: 1; 요소가 있다면 그 요소보다 두 배 넓게, flex: 3; 요소가 있다면 그보다 2/3 크기로 배치
+
+  */
+  flex: 2;
+  padding: 16px;
+  border-right: 1px solid #ddd;
+}
+
+#apiSection .weather {
+  padding: 16px;
+  height: 300px;
+  
+  display: flex;
+
+  flex: 1;
+}
+
+.newsUl{
+  list-style: none;
+}
+
+.newsLi{
+  margin-bottom: 35px;
+}
+
+.newsTit{
+  margin-bottom: 16px;
+}
+
+.newsTit>a{
+  font-size: 22px; font-weight: 700;
+  text-decoration: none;
+}
+
+#weatherIconImg{
+  width : 40px; height : 40px;
+}
+
+.weatherPrintDiv{
+	margin-bottom: 20px; margin-left: 16px;
+	
+  display: flex;
+}
+
+.dayInWeatherPrintDiv{
+  width : 24.5%; height: 300px;
+  /* border-top: 2px solid rgb(138, 125, 125); */
+  
+  display: flex;
+  flex-direction: column;
+}
+
+/* 일자 출력 */
+.dayCntIndayPrintDiv{
+  margin-bottom: 30px;
+
+  height : 10%;
+
+  background-color: #87CEFA80;
+  color: white;
+
+  font-size: 16px; font-weight: 700;
+
+	text-align: center;
+  vertical-align: middle;
+}
+
+
+/* 날씨 정보 출력 */
+.weatherInfoIndayPrintDiv{
+	display: flex;
+}
+
+/* 날씨 이미지 출력  */
+.weather-img-div{
+	width: 60%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.weather-img-div>img{
+	width: 70%; height: 100%;
+}
+
+/* 날씨 설명 출력 */
+.weather-txt-div{
+	width: 35%;
+	
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+
+
+/* Category Navigation */
+#categoryNav {
+  margin: 0 24px;
+  background: #e0e0e0;
+  border-radius: 4px;
+
+}
+
+#categoryNav ul {
+  display: flex;
+    justify-content: space-between;
+
+  list-style:none;
+
+}
+
+#categoryNav li {
+  margin: 0 12px;
+}
+
+#categoryNav li:last-child>a{
+  padding:10px 12px;
+  
+
+  font-weight: 500; font-size: 18px;
+  color :#9ba8c7;
+  text-decoration : none;
+
+  display : inline-block;
+}
+
+#categoryNav a {
+  padding:8px 12px;
+  
+  font-weight:700; font-size: 21px;
+  color : #333;
+  
+  text-decoration : none;
+  
+  display : inline-block;
+}
+
+#categoryNav a:hover {
+  background:#ccc; border-radius:4px;
+}
+
+
+/* 게시판 영역 분할 */
+#boardContainer {
+  display: flex;
+  margin: 12px 24px 24px;
+  /* 예시: 헤더/API/네비 높이 빼고 */
+  height: 920px; 
+}
+
+
+#boardDiv, #recommAndCmtDiv {
+  background: #fff;
+  border: 1px solid #ddd; 
+    border-radius: 8px;
+  
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+#boardDiv{ width: 60%; }
+#recommAndCmtDiv{ width : 40%; }
+
+
+/* SNS 스타일 게시글 */
+#boardDiv .post {
+  padding: 16px 16px 0px 16px;  
+  height : auto;
+  
+  
+}
+#boardDiv .post:last-child {
+  border-bottom: none;
+}
+.post-header {
+	margin-bottom: 18px;
+	
+  display: flex;
+  align-items: center;
+ 
+}
+.post-header .avatar {
+  width:60px; height:60px;
+  background:#ccc;
+  border-radius:50%;
+  margin-right:12px;
+  
+ 	/* avatar 박스 영역을 벗어난 이미지는 보이지 않게 잘라냄 */
+  overflow: hidden;
+}
+
+.avatar img{
+	width: 100%;
+  height: 100%;
+  
+  /* 박스에 가득 채우되, 비율 유지를 위해 잘라내기 */
+  object-fit: cover;
+  
+  /* 자른 후에도 중앙 부분이 보이도록 */
+  object-position: center center;
+  
+  /* 불필요한 반복 금지 */
+  display: block;         /* img 기본 inline 특성 제거 */
+}
+
+.post-header .user-info {
+  display: flex;
+  flex-direction: column;
+}
+.post-header .username {
+  font-weight:bold;
+}
+.post-header .role {
+  font-size:0.85rem;
+  color:#666;
+}
+.post-header .meta {
+  margin-left:auto;
+  font-size:0.85rem;
+  color:#999;
+}
+
+.title {
+  background:#f9f9f9;
+  padding:12px;
+  border-radius:4px;
+  margin-bottom:20px;
+  font-size:0.95rem;
+}
+
+.title>a{
+	font-weight : 700; font-size : 20px;
+	text-decoration : none;
+	/* 분홍, color : #ffc0cb; */
+  color : #0067A380;
+}
+
+.content {
+	/* 여러 줄 ... (ellipsis) 를 위한 witdh 설정 */
+	width : 100%;
+  
+  font-size:0.9rem;
+  color:#333;
+  margin-bottom:8px;
+}
+
+/* 여러 줄 ... 처리 */
+.ellipsis--line2{
+	overflow: hidden;
+	white-space: normal;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	word-break: keep-all;
+}
+
+/*  */
+.multi-line-ellipsis {
+  display: -webkit-box;            /* flexbox의 일종으로 박스 생략 모드 활성화 */
+  -webkit-box-orient: vertical;    /* 박스를 세로 방향으로 쌓기 */
+  -webkit-line-clamp: 3;           /* 표시할 최대 줄 수 */
+  overflow: hidden;                /* 넘치는 텍스트 숨기기 */
+}
+
+.actions {
+  padding-bottom: 20px;
+	margin-top: 13px;
+
+  display:flex;
+  gap:16px;
+  font-size:0.85rem;
+  color:#555;
+
+  border-bottom: 2px solid #b9b5b5;
+  /* border-bottom: 2px solid #eee; */
+}
+.actions .like,
+.actions .comment {
+  cursor: pointer;
+}
+
+/* 좋아요 · 댓글 · 조회수 많은 순  */
+#recommAndCmtDiv {
+  display: flex;
+  flex-direction: column;
+}
+#recommandBoard, #cmtBoard
+, #rctBoard, #newBoard {
+  flex: 1;
+  padding: 16px;
+  border-top: none;
+}
+
+#recommandBoard, #cmtBoard, #rctBoard{
+  border-bottom: 1px solid #ddd;
+}
+#recommandBoard h3, #cmtBoard h3
+, #rctBoard h3, #newBoard h3 {
+  margin-bottom: 12px;
+  font-size:1rem;
+  color: #0067A3;
+}
+#recommandBoard ol, #cmtBoard ol
+, #rctBoard ol, #newBoard ol  {
+  list-style: decimal;
+  padding-left: 20px;
+}
+#recommandBoard li, #cmtBoard li
+, #rctBoard li, #newBoard li {
+  margin-bottom: 6px;
+  font-size:0.9rem;
+}
+
+.homeTitA{
+  color: black;
+  text-decoration: none;
+}
+
+.two-line-ellipsis {
+  display: -webkit-box;            /* flexbox의 일종으로 박스 생략 모드 활성화 */
+  -webkit-box-orient: vertical;    /* 박스를 세로 방향으로 쌓기 */
+  -webkit-line-clamp: 3;           /* 표시할 최대 줄 수 */
+  overflow: hidden;                /* 넘치는 텍스트 숨기기 */
+}
+
+/* 여러 줄 ... 처리 
+ * 
+ *  > display: -webkit-box 를 사용해서 <li>의 display가 list-item이 아닌 block 계열로 바뀌었기 때문에 숫자가 생략
+ *  
+ *  > 따라서,  말줄임 대상은 <li> 안의 자식 요소에만 적용하길 권장
+ */
+.ellipsis--lineTwo{
+	overflow: hidden;
+	white-space: normal;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	word-break: keep-all;
+}
+
+@media(min-width:900px){
+
+}

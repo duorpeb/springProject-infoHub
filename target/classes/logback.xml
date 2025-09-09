@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration> 
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>
+				%d - %msg %n
+			</pattern>
+		</encoder>	
+	</appender>
+	
+	<!-- Logger 에 대한 구분  -->
+	<logger name = "com.myproject.www" level="info" appender-ref="STDOUT"></logger>
+	<logger name = "org.springframework" level="info" appender-ref="STDOUT"></logger>
+	<logger name = "org.springframework.jdbc" level="info" appender-ref="STDOUT"></logger>
+	<logger name = "jdbc.sqlonly" level="info" appender-ref="STDOUT"></logger>
+	<logger name = "jdbc.resultsettable" level="info" appender-ref="STDOUT"></logger>
+
+  <root level="debug">
+    <appender-ref ref="STDOUT" />
+  </root>
+</configuration>

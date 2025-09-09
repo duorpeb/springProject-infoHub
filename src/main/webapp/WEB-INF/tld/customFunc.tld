@@ -1,0 +1,24 @@
+<taglib 
+	 xmlns="http://java.sun.com/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation
+	   ="http://java.sun.com/xml/ns/javaee
+       http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+   version="2.1">
+   
+  <tlib-version>1.0</tlib-version>
+  <short-name>customFunc</short-name>
+	<!-- uri 작성 시 주의사항
+		> uri 는 논리적 식별자로 유일한 도메인이기만 하면 되며 function-class 를 적을 때 처럼 실제 경로를 적지 않아도 됨 
+		
+		> 커스텀이면 urn:회사:프로젝트:라이브러리 또는 http(s)://yourdomain/tags/라이브러리처럼 고유하고 의미 있는 문자열
+		-->  
+  <uri>http://myproject.com/jsp/customFunc</uri>
+
+  <function>
+    <name>getCategoryTit</name>
+    <function-class>com.myproject.www.handler.PagingHandler</function-class>
+    <function-signature>java.lang.String getCategoryTit(java.lang.String)</function-signature>
+  </function>
+  
+ </taglib>
