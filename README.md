@@ -85,7 +85,7 @@
 <img src="https://img.shields.io/badge/naver search API-03C75A?style=for-the-badge&logo=naver&logoColor=white"> <img src="https://img.shields.io/badge/기상청_단기예보_API-EB4D6F"> <img src="https://img.shields.io/badge/Geolocation_Web API-42A1F5"> 
 <br><br>
 
-### 🖥️ 라이브러리 
+### 🖥️ Library 
 <img src="https://img.shields.io/badge/Spring%20Context-5.3.10-6DB33F?style=for-the-badge&logo=spring&logoColor=white" /> <img src="https://img.shields.io/badge/Spring%20WebMVC-5.3.10-6DB33F?style=for-the-badge&logo=spring&logoColor=white" /> <img src="https://img.shields.io/badge/Spring%20JDBC-5.3.10-6DB33F?style=for-the-badge&logo=spring&logoColor=white" /> <img src="https://img.shields.io/badge/Spring%20Test-5.3.10-6DB33F?style=for-the-badge&logo=spring&logoColor=white" />
 <br><br>
 
