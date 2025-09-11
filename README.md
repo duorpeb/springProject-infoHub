@@ -3,6 +3,12 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=info-Hub">
 
 
+> # 💡 프로젝트 소개 
+🖥️ 뉴스 기사와 날씨를 볼 수 있는 커뮤니티 사이트를 제작해보았습니다.
+
+<br><br><br><br><br>
+
+
 ### 🖥️ 스크린샷
 
 > 📗 메인 페이지 - 실시간 뉴스 기사 10개 출력 
@@ -54,14 +60,6 @@
 
 > 📗 회원 정보 수정 페이지 - 프로필 사진 · 이메일 · 비밀번호 수정, 회원 탈퇴
 >> <img width="508" height="621" alt="image" src="https://github.com/user-attachments/assets/070abd59-d65f-47a6-8526-6297832a23d8" />
-
-
-
-<br><br><br><br><br>
-
-
-> # 💡 프로젝트 소개 
-🖥️ 뉴스 기사와 날씨를 볼 수 있는 커뮤니티 사이트를 제작해보았습니다.
 
 <br><br><br><br><br>
 
